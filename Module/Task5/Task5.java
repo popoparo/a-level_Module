@@ -3,7 +3,7 @@ package Module.Task5;
 import java.util.Scanner;
 
 public class Task5 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         Scanner scannerStart = new Scanner(System.in);
         Scanner scannerStep = new Scanner(System.in);
@@ -12,6 +12,7 @@ public class Task5 {
         int xStart = scannerStart.nextInt();
         System.out.println("Введите координату Y начала(От 0 до 8)");
         int yStart = scannerStart.nextInt();
+        System.out.println("Начальная точка: " + "(" + xStart + ":" + yStart +")");
         while (true) {
             System.out.println("Введите Х хода");
             int xStep = scannerStep.nextInt();
@@ -31,7 +32,7 @@ public class Task5 {
                                     && yStep <= 8 && yStep >= 0)
 
             {
-                System.out.println("Вы походили на: " + "х: " + xStep + " y: " + yStep);
+                System.out.println("Вы походили на: " + "(" + xStep + ":" + yStep + ")");
             } else {
                 System.out.println("Неправилный ход");
             }
